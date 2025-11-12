@@ -63,3 +63,22 @@ Deshacer cambios hechos eliminando el historial de commits y los archivos modifi
 #### ¡CUIDADO! Este comando elimina los cambios hechos y no se pueden recuperar.
 
 ## Clase 6 - Git tag | Git checkout para gestion de versiones y revision.
+
+Crear una etiqueta anotada (tag) en el commit actual
+> git tag -a nombre-etiqueta -m "Mensaje de la etiqueta"
+### La -a es para crear una etiqueta anotada, que incluye un mensaje y metadatos adicionales. Si no se usa -a, se crea una etiqueta ligera sin metadatos adicionales.
+
+Listar todas las etiquetas (tags) en el repositorio
+> git tag
+
+Ver detalles de una etiqueta específica
+> git show nombre-etiqueta
+
+Eliminar una etiqueta específica (no elimina el commit asociado)
+> git tag -d nombre-etiqueta
+
+Cargar el estado del repositorio a un commit específico (útil para revisión de versiones)
+> git checkout [hash-commit]
+
+Volver al estado actual del repositorio después de usar git checkout para revisión
+> git switch main
