@@ -43,7 +43,7 @@ Commit de los archivos en el área de preparación (staging area)
 Listar las ramas del repositorio
 > git branch
 
-Cambiar de rama o crear una nueva rama
+Cambiar de rama
 > git switch nombre-rama
 
 ## Clase 5 -  Git reset | revert
@@ -82,3 +82,8 @@ Cargar el estado del repositorio a un commit específico (útil para revisión d
 
 Volver al estado actual del repositorio después de usar git checkout para revisión
 > git switch main
+
+## Clase 7 - Manejo de conflictos
+
+Crear y cambiar a una nueva rama
+> git switch -c nombre-rama
